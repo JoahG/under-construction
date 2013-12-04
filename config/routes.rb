@@ -1,4 +1,6 @@
 UnderConstruction::Application.routes.draw do
+  get "p/index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -13,3 +13,5 @@ end
 gem 'jquery-rails'
 
 gem 'rails_12factor'
+
+gem 'obfuscatejs'

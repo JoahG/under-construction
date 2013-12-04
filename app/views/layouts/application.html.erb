@@ -1,14 +1,57 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>UnderConstruction</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+		<style>
+			body {
+				background-color:  rgb(255, 175, 19);
+				font-family: "Trebuchet MS";
+			}
 
-<%= yield %>
+			#safetyCone {
+				margin:auto;
+				width: 125px;
+				margin-bottom: 10px;
+				margin-top: 15%;
+			}
 
-</body>
+			#cone {
+				margin:auto;
+				width:10px;
+				height:0;
+				border-right: 40px solid transparent;
+				border-left: 40px solid transparent;
+				border-bottom: 100px solid white;
+			}
+
+			#base {
+				background-color: white;
+				-webkit-box-shadow: 0 1px 0 rgb(212, 145, 16);
+				box-shadow: 0 1px 0 rgb(212, 145, 16);
+				width: 125px;
+				height: 10px;
+			}
+
+			#message {
+				color: white;
+				text-align:center;
+				-webkit-text-shadow: 0 1px 0 rgb(212, 145, 16);
+				text-shadow: 0 1px 0 rgb(212, 145, 16);
+			}
+
+			a {
+				color: #eee;
+				text-decoration: none;
+				-webkit-text-shadow: 0 1px 0 rgb(212, 145, 16);
+				text-shadow: 0 1px 0 rgb(212, 145, 16);
+			}
+
+			a:hover {
+				text-decoration: underline;
+			}
+		</style>
+		<link rel="icon" type="image/png" href="/favicon.png">
+	</head>
+	<body>
+		<%= yield %>
+	</body>
 </html>
